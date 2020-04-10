@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+          >
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What speed do you prefer?"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/menu_RDG_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <RadioButton
+                android:id="@+id/menu_RDB_slow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slow"/>
+
+            <RadioButton
+                android:id="@+id/menu_RDB_fast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fast"/>
+        </RadioGroup>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How do you want to control \nyour spaceship? "
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/menu_RDG_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+
+            <RadioButton
+                android:id="@+id/menu_RDB_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buttons"/>
+
+            <RadioButton
+                android:id="@+id/menu_RDB_sensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sensor"/>
+
+
+        </RadioGroup>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/menu_BTN_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start!"
+        android:background="@drawable/ic_button"/>
+
+    </LinearLayout>
+</RelativeLayout>
